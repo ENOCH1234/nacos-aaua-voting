@@ -31,7 +31,7 @@
               <span class="hidden-xs"><?php echo $voter['firstname'] . ' ' . $voter['lastname']; ?></span>
             </a>
           </li>
-          <li><a href="logout.php"><i class="fa fa-sign-out"></i> LOGOUT</a></li>
+          <li><a href="logout"><i class="fa fa-sign-out"></i> LOGOUT</a></li>
         </ul>
       </div>
       <!-- /.navbar-custom-menu -->
