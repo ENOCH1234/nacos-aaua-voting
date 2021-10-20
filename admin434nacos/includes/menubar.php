@@ -20,6 +20,7 @@
       <li class=""><a href="voters"><i class="fa fa-users"></i> <span>Voters</span></a></li>
       <li class=""><a href="positions"><i class="fa fa-tasks"></i> <span>Positions</span></a></li>
       <li class=""><a href="candidates"><i class="fa fa-black-tie"></i> <span>Candidates</span></a></li>
+      <li class=""><a href="password"><i class="fa fa-key"></i> <span>Generate Password</span></a></li>
       <li class="header">SETTINGS</li>
       <li class=""><a href="ballot"><i class="fa fa-file-text"></i> <span>Ballot Position</span></a></li>
       <li class=""><a href="#config" data-toggle="modal"><i class="fa fa-cog"></i> <span>Election Title</span></a></li>
