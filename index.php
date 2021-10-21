@@ -1,11 +1,11 @@
 <?php
 session_start();
 if (isset($_SESSION['admin'])) {
-	header('location: admin/home.php');
+	header('location: admin434nacos/home');
 }
 
 if (isset($_SESSION['voter'])) {
-	header('location: home.php');
+	header('location: home');
 }
 ?>
 <?php include 'includes/header.php'; ?>

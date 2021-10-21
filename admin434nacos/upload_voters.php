@@ -12,11 +12,11 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Generate Password
+          Upload Voters
         </h1>
         <ol class="breadcrumb">
-          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-          <li class="active">Generate Password</li>
+          <li><a href="./"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li class="active">Upload Voters</li>
         </ol>
       </section>
       <!-- Main content -->
@@ -47,19 +47,19 @@
           <div class="col-xs-12">
             <div class="box">
               <div class="box-header with-border">
-                <h4>Enter Matriculation number to generate password</h4>
+                <h4>Choose Student List To Upload</h4>
               </div>
               <div class="box-body">
-                <form class="form-horizontal" method="POST" action="generate_password.php">
-                  <div class="form-group">
-                    <!-- <label for="matric" class="col-sm-3 control-label">Matric Number</label> -->
+                <form class="form-horizontal" method="POST" action="upl_voters.php" enctype="multipart/form-data">
 
-                    <div class="col-md-12">
-                      <input type="text" class="form-control" id="matric" name="matric" placeholder="Enter Matriculation Number" required>
-                    </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">Student List <span style="color: red;"><strong>in Excel Format</strong></span>
+                    </label>
+                    <input class="mdl-textfield__input" type="file" name="file" id="file" accept=".xls,.xlsx" required>
                   </div>
+
                   <div class="form-group text-center">
-                    <button type="submit" class="btn btn-success btn-flat" name="generate"><i class="fa fa-key"></i> Generate Password</button>
+                    <button type="submit" class="btn btn-success btn-flat" name="import"><i class="fa fa-check-square-o"></i> Upload Voters</button>
                   </div>
               </div>
             </div>

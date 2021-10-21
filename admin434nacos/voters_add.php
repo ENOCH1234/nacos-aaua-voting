@@ -24,4 +24,4 @@ if (isset($_POST['add'])) {
 	$_SESSION['error'] = 'Fill up add form first';
 }
 
-header('location: voters.php');
+header('location: voters');

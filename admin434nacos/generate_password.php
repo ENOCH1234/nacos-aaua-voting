@@ -7,12 +7,11 @@ if (isset($_POST['generate'])) {
 	$sql = "SELECT * FROM voters WHERE voters_id = $matric";
 	$query = $conn->query($sql);
 	if ($query->num_rows < 1) {
-		$_SESSION['error'] = 'Matriculation number does not exist in database';
+		$_SESSION['error'] = 'Matriculation number does not exist in the database';
 	} else {
 		$row = $query->fetch_assoc();
 
 		// Generate Password
-		// $set = '123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 		$set = '0123456789';
 		$pin_generate = substr(str_shuffle($set), 0, 5);
 		$password = password_hash($pin_generate, PASSWORD_DEFAULT);
@@ -26,4 +25,4 @@ if (isset($_POST['generate'])) {
 	}
 }
 
-header('location: password.php');
+header('location: password');
