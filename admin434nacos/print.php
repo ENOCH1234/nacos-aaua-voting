@@ -60,7 +60,7 @@ $content = '';
 $content .= '
       	<h2 align="center">' . $title . '</h2>
       	<h4 align="center">Vote Result</h4>
-      	<table border="1" cellspacing="0" cellpadding="3">  
+      	<table border="1" cellspacing="0" cellpadding="3">
       ';
 $content .= generateRow($conn);
 $content .= '</table>';

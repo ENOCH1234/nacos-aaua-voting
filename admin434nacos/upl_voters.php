@@ -26,22 +26,22 @@ if (isset($_POST["import"])) {
                     $matric = mysqli_real_escape_string($conn, $Row[0]);
                 }
 
-                $firstname = "";
+                $lastname = "";
                 if (isset($Row[1])) {
-                    $firstname = mysqli_real_escape_string($conn, $Row[1]);
+                    $lastname = mysqli_real_escape_string($conn, $Row[1]);
                 }
 
-                $lastname = "";
+                $firstname = "";
                 if (isset($Row[2])) {
-                    $lastname = mysqli_real_escape_string($conn, $Row[2]);
+                    $firstname = mysqli_real_escape_string($conn, $Row[2]);
                 }
 
                 // Generate password from matric number and hash
-                $password = password_hash($matric, PASSWORD_DEFAULT);
+                // $password = password_hash($matric, PASSWORD_DEFAULT);
 
                 if (!empty($matric) || !empty($surname) || !empty($first_name)) {
-                    $query = "insert into voters(voters_id,password,firstname,lastname) 
-                    values('" . $matric . "','" . $password . "','" . $firstname . "','" . $lastname . "')";
+                    $query = "insert into voters(voters_id,firstname,lastname) 
+                    values('" . $matric . "','" . $firstname . "','" . $lastname . "')";
                     $result = mysqli_query($conn, $query);
                 }
             }
